@@ -170,18 +170,12 @@
   import {Badge} from 'src/components/UIComponents'
   import Loading from 'src/components/Dashboard/Layout/LoadingMainPanel.vue'
   import TaskList from './Widgets/TaskList'
-  const WorldMap = () => ({
-    component: import('./../Maps/WorldMap.vue'),
-    loading: Loading,
-    delay: 200
-  })
 
   export default {
     components: {
       StatsCard,
       ChartCard,
       CircleChartCard,
-      WorldMap,
       Badge,
       TaskList
     },
