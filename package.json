@@ -6,7 +6,8 @@
   "author": "Creative Tim",
   "scripts": {
     "build": "vue-cli-service build",
-    "dev": "vue-cli-service serve --open"
+    "dev": "vue-cli-service serve --open",
+    "start": "serve -s build"
   },
   "dependencies": {
     "@fullcalendar/core": "5.11.3",
@@ -23,6 +24,7 @@
     "nprogress": "0.2.0",
     "perfect-scrollbar": "1.5.2",
     "register-service-worker": "1.7.2",
+    "serve": "^14.2.3",
     "sweetalert2": "^11.6.13",
     "topojson": "3.0.2",
     "vee-validate": "3.4.13",
