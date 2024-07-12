@@ -1,5 +1,79 @@
 <template>
   <div>
+    
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <circle-chart-card :percentage="70"
+                           chart-id="email-statistics-chart"
+                           title="Email Statistics"
+                           description="Last Campaign Performance"
+                           color="#4acccd">
+          <template slot="footer">
+            <div class="legend">
+              <i class="fa fa-circle text-info"></i> Open
+            </div>
+            <hr>
+            <div class="stats">
+              <i class="fa fa-calendar"></i> Number of emails sent
+            </div>
+          </template>
+        </circle-chart-card>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <circle-chart-card :percentage="34"
+                           chart-id="new-visitors-chart"
+                           title="New Visitators"
+                           description="Out Of Total Number"
+                           color="#fcc468">
+          <template slot="footer">
+            <div class="legend">
+              <i class="fa fa-circle text-warning"></i> Visited
+            </div>
+            <hr>
+            <div class="stats">
+              <i class="fa fa-check"></i> Campaign sent 2 days ago
+            </div>
+          </template>
+        </circle-chart-card>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <circle-chart-card :percentage="80"
+                           title="Orders"
+                           chart-id="orders-chart"
+                           description="Total Number"
+                           color="#f17e5d">
+          <template slot="footer">
+            <div class="legend">
+              <i class="fa fa-circle text-danger"></i> Completed
+            </div>
+            <hr>
+            <div class="stats">
+              <i class="fa fa-clock-o"></i> Updated 3 minutes ago
+            </div>
+          </template>
+        </circle-chart-card>
+      </div>
+
+      <div class="col-lg-3 col-sm-6">
+        <circle-chart-card :percentage="11"
+                           title="Subscriptions"
+                           description="Our Users"
+                           color="#66615b">
+          <template slot="footer">
+            <div class="legend">
+              <i class="fa fa-circle text-secondary"></i> Ended
+            </div>
+            <hr>
+            <div class="stats">
+              <i class="fa fa-history"></i> Total users
+            </div>
+          </template>
+        </circle-chart-card>
+      </div>
+    </div>
+    
     <div class="card">
       <div class="card-header">
         <h5 class="card-title">Table with Links</h5>
@@ -140,11 +214,13 @@
   import Vue from 'vue'
   import {Table, TableColumn} from 'element-ui'
   import PSwitch from 'src/components/UIComponents/Switch.vue'
+  import CircleChartCard from 'src/components/UIComponents/Cards/CircleChartCard.vue'
   Vue.use(Table)
   Vue.use(TableColumn)
   export default{
     components: {
-      PSwitch
+      PSwitch,
+      CircleChartCard
     },
     data () {
       return {
