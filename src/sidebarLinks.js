@@ -1,7 +1,7 @@
 export default [
   {
     name: 'Membros',
-    icon: 'nc-icon ti-user',
+    icon: 'nc-icon nc-single-02',
     path: '/table-list/extended'
   },
   {

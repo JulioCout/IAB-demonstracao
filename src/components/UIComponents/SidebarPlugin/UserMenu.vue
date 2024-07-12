@@ -6,7 +6,7 @@
     <div class="info">
       <a data-toggle="collapse" :aria-expanded="!isClosed" @click="toggleMenu" href="#">
          <span>
-           Chet Faker
+           João Silva
            <b class="caret"></b>
         </span>
       </a>

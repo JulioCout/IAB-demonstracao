@@ -146,68 +146,6 @@
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <div class="card">
-          <div class="card-header">
-            <h5 class="card-title">Shopping Cart Table</h5>
-          </div>
-          <div class="table-responsive">
-            <el-table class="table-shopping"
-                      :summary-method="getSummaries"
-                      show-summary
-                      style="width: 100%"
-                      :data="productsTable">
-              <el-table-column min-width="120">
-                <template slot-scope="props">
-                  <div class="img-container">
-                    <img :src="props.row.image" alt="Agenda">
-                  </div>
-                </template>
-              </el-table-column>
-              <el-table-column min-width="220" class-name="td-name">
-                <template slot-scope="{row}">
-                  <a>{{row.title}}</a>
-                  <br>
-                  <small>{{row.subTitle}}</small>
-                </template>
-              </el-table-column>
-              <el-table-column
-                class-name="td-number"
-                min-width="80"
-                class="td-price"
-                label="Price">
-                <template slot-scope="props">
-                  <small>&euro;</small> {{props.row.price}}
-                </template>
-              </el-table-column>
-              <el-table-column
-                class-name="td-number"
-                min-width="150"
-                label="QTY"
-                class="td-number td-quantity">
-                <template slot-scope="props">
-                  {{props.row.quantity}}
-                  <div class="btn-group btn-group-sm">
-                    <p-button type="default" round outline size="sm" @click="props.row.quantity > 0 ? props.row.quantity-- : 0">
-                      <i class="nc-icon nc-simple-delete"></i>
-                    </p-button>
-                    <p-button type="default" round outline size="sm" @click="props.row.quantity++">
-                      <i class="nc-icon nc-simple-add"></i>
-                    </p-button>
-                  </div>
-                </template>
-              </el-table-column>
-              <el-table-column class-name="td-number" label="Total"  min-width="100">
-                <template slot-scope="props">
-                  <strong><small>&euro;</small> {{props.row.quantity * props.row.price}} </strong>
-                </template>
-              </el-table-column>
-            </el-table>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 <script>

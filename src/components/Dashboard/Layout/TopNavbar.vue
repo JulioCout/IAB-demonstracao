@@ -12,13 +12,13 @@
 
         </navbar-toggle-button>
       </div>
-      <a class="navbar-brand" href="#pablo">Vue Paper Dashboard 2 PRO</a>
+      <a class="navbar-brand" href="#pablo">IAB Sistema de Demonstração</a>
     </div>
 
     <template slot="navbar-menu">
       <form>
         <div class="input-group no-border">
-          <input type="text" value="" class="form-control" placeholder="Search...">
+          <input type="text" value="" class="form-control" placeholder="Busca...">
           <div class="input-group-append">
             <div class="input-group-text">
               <i class="nc-icon nc-zoom-split"></i>
