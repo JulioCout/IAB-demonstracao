@@ -6,9 +6,12 @@ const Overview = () => import(/* webpackChunkName: "widgets" */ 'src/components/
 const Widgets = () => import(/* webpackChunkName: "widgets" */ 'src/components/Dashboard/Views/Dashboard/Widgets.vue')
 
 // Pages
+import Login from 'src/components/Dashboard/Views/Pages/Login.vue'
+import Contact from '../components/Dashboard/Views/Pages/Contact.vue'
+import Inicio from '../components/Dashboard/Views/Pages/Inicio.vue'
+
 import User from 'src/components/Dashboard/Views/Pages/UserProfile.vue'
 import TimeLine from 'src/components/Dashboard/Views/Pages/TimeLinePage.vue'
-import Login from 'src/components/Dashboard/Views/Pages/Login.vue'
 import Register from 'src/components/Dashboard/Views/Pages/Register.vue'
 import Lock from 'src/components/Dashboard/Views/Pages/Lock.vue'
 
@@ -175,10 +178,23 @@ let pagesMenu = {
   ]
 }
 
+// Minhas páginas começam aqui
 let loginPage = {
   path: '/login',
   name: 'Login',
   component: Login
+}
+
+let contactPage = {
+  path: '/contato',
+  name: 'Contact',
+  component: Contact
+}
+
+let inicioPage = {
+  path: '/inicio',
+  name: 'Inicio',
+  component: Inicio
 }
 
 let registerPage = {
@@ -197,7 +213,7 @@ const routes = [
   {
     path: '/',
     component: DashboardLayout,
-    redirect: '/admin/overview',
+    redirect: '/inicio',
     children: [
       {
         path: 'calendar',
@@ -211,18 +227,20 @@ const routes = [
       }
     ]
   },
+  inicioPage,
+  loginPage,
+  contactPage,
   componentsMenu,
   formsMenu,
   tablesMenu,
   mapsMenu,
   pagesMenu,
-  loginPage,
   registerPage,
   lockPage,
   {
     path: '/admin',
-    component: DashboardLayout,
-    redirect: '/admin/overview',
+    component: Login,
+    redirect: '/login',
     children: [
       {
         path: 'overview',
