@@ -66,7 +66,7 @@
       },
       login() {
         if(this.form.username == "bernardo" && this.form.password == "bernardoiab") {
-          alert("passou")
+          this.$router.push({ name: 'Overview'})
         }
         else {
           this.form.username = ''

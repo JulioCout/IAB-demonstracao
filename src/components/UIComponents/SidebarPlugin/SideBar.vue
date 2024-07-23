@@ -2,19 +2,6 @@
   <div class="sidebar"
        :data-color="backgroundColor"
        :data-active-color="activeColor">
-    <div class="logo">
-      <a class="simple-text logo-mini"
-         aria-label="sidebar mini logo"
-         href="https://www.creative-tim.com/product/vue-paper-dashboard-2-pro">
-          <div class="logo-img">
-              <img :src="logo" alt="">
-          </div>
-      </a>
-      <a class="simple-text logo-normal"
-         href="https://www.creative-tim.com/vue-paper-dashboard-2-pro">
-          {{ title }}
-      </a>
-    </div>
     <div class="sidebar-wrapper" ref="sidebarScrollArea">
       <slot>
 
@@ -42,7 +29,7 @@
     props: {
       title: {
         type: String,
-        default: 'IAB System',
+        default: 'Data Board IAB',
         description: 'Sidebar title'
       },
       backgroundColor: {

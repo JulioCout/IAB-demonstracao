@@ -1,19 +1,44 @@
 export default [
   {
+    name: 'Inicio',
+    icon: 'nc-icon nc-bank',
+    path: '/admin/overview'
+  },
+  {
+    name: 'Financeiro',
+    icon: 'nc-icon nc-money-coins',
+    path: '/admin/overview'
+  },
+  {
     name: 'Membros',
     icon: 'nc-icon nc-single-02',
     path: '/table-list/extended'
   },
   {
-    name: 'Ex Perfil',
-    icon: 'nc-icon nc-badge',
-    path: '/pages/user'
+    name: 'Indicações',
+    icon: 'nc-icon nc-paper',
+    path: '/table-list/paginated'
   },
   {
-    name: 'Financeiro',
-    icon: 'nc-icon nc-bank',
-    path: '/admin/overview'
+    name: 'Processos',
+    icon: 'nc-icon nc-tile-56',
+    path: '/charts'
   },
+  // {
+  //   name: 'Calendário',
+  //   icon: 'nc-icon nc-calendar-60',
+  //   path: '/calendar'
+  // }
+  // {
+  //   name: 'Indicações',
+  //   icon: 'nc-icon nc-paper',
+  //   path: '/forms/regular'
+  // },
+  // {
+  //   name: 'Ex Perfil',
+  //   icon: 'nc-icon nc-badge',
+  //   path: '/pages/user'
+  // },
   // {
   //   name: 'Pages',
   //   icon: 'nc-icon nc-book-bookmark',
@@ -72,11 +97,6 @@ export default [
   //     path: '/components/typography'
   //   }]
   // },
-  {
-    name: 'Forms',
-    icon: 'nc-icon nc-ruler-pencil',
-    path: '/forms/regular'
-  },
   // {
   //   name: 'Table List',
   //   icon: 'nc-icon nc-single-copy-04',
@@ -94,20 +114,5 @@ export default [
   //     path: '/table-list/paginated'
   //   }
   //   ]
-  // },
-  {
-    name: 'Indicações',
-    icon: 'nc-icon nc-box',
-    path: '/table-list/paginated'
-  },
-  {
-    name: 'Gráficos',
-    icon: 'nc-icon nc-chart-bar-32',
-    path: '/charts'
-  },
-  {
-    name: 'Calendário',
-    icon: 'nc-icon nc-calendar-60',
-    path: '/calendar'
-  },
+  // }
 ]

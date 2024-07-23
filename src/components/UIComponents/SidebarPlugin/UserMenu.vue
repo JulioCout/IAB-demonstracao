@@ -6,7 +6,7 @@
     <div class="info">
       <a data-toggle="collapse" :aria-expanded="!isClosed" @click="toggleMenu" href="#">
          <span>
-           João Silva
+           Bernardo Gicquel
            <b class="caret"></b>
         </span>
       </a>
@@ -16,20 +16,8 @@
           <ul class="nav nav-menu" v-show="!isClosed">
             <li>
               <a href="#">
-                <span class="sidebar-mini-icon">Mp</span>
-                <span class="sidebar-normal">My Profile</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="sidebar-mini-icon">Ep</span>
-                <span class="sidebar-normal">Edit Profile</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="sidebar-mini-icon">S</span>
-                <span class="sidebar-normal">Settings</span>
+                <span class="sidebar-mini-icon">X</span>
+                <span class="sidebar-normal">Sair</span>
               </a>
             </li>
           </ul>

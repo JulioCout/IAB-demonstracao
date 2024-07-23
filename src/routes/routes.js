@@ -8,12 +8,10 @@ const Widgets = () => import(/* webpackChunkName: "widgets" */ 'src/components/D
 // Pages
 import Login from 'src/components/Dashboard/Views/Pages/Login.vue'
 import Contact from '../components/Dashboard/Views/Pages/Contact.vue'
-import Inicio from '../components/Dashboard/Views/Pages/Inicio.vue'
 
 import User from 'src/components/Dashboard/Views/Pages/UserProfile.vue'
 import TimeLine from 'src/components/Dashboard/Views/Pages/TimeLinePage.vue'
-import Register from 'src/components/Dashboard/Views/Pages/Register.vue'
-import Lock from 'src/components/Dashboard/Views/Pages/Lock.vue'
+
 
 // Components pages
 import Buttons from 'src/components/Dashboard/Views/Components/Buttons.vue'
@@ -191,29 +189,11 @@ let contactPage = {
   component: Contact
 }
 
-let inicioPage = {
-  path: '/inicio',
-  name: 'Inicio',
-  component: Inicio
-}
-
-let registerPage = {
-  path: '/register',
-  name: 'Register',
-  component: Register
-}
-
-let lockPage = {
-  path: '/lock',
-  name: 'Lock',
-  component: Lock
-}
-
 const routes = [
   {
     path: '/',
-    component: DashboardLayout,
-    redirect: '/inicio',
+    component: Login,
+    redirect: '/login',
     children: [
       {
         path: 'calendar',
@@ -227,7 +207,6 @@ const routes = [
       }
     ]
   },
-  inicioPage,
   loginPage,
   contactPage,
   componentsMenu,
@@ -235,12 +214,10 @@ const routes = [
   tablesMenu,
   mapsMenu,
   pagesMenu,
-  registerPage,
-  lockPage,
   {
     path: '/admin',
-    component: Login,
-    redirect: '/login',
+    component: DashboardLayout,
+    redirect: '/admin/overview',
     children: [
       {
         path: 'overview',
