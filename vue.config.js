@@ -19,7 +19,7 @@ module.exports = {
     ]
   },
   pwa: {
-    name: 'Vue Paper Dashboard PRO',
+    name: 'Data Board IAB Nacional',
     themeColor: '#66615B',
     msTileColor: '#66615B',
     appleMobileWebAppCapable: 'yes',

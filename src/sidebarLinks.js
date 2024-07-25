@@ -7,23 +7,23 @@ export default [
   {
     name: 'Financeiro',
     icon: 'nc-icon nc-money-coins',
-    path: '/admin/overview'
+    path: '/admin/financeiro'
   },
   {
     name: 'Membros',
     icon: 'nc-icon nc-single-02',
-    path: '/table-list/extended'
+    path: '/admin/membros'
   },
   {
     name: 'Indicações',
     icon: 'nc-icon nc-paper',
-    path: '/table-list/paginated'
+    path: '/admin/indicacoes'
   },
   {
     name: 'Processos',
     icon: 'nc-icon nc-tile-56',
-    path: '/charts'
-  },
+    path: '/admin/processos'
+  }
   // {
   //   name: 'Calendário',
   //   icon: 'nc-icon nc-calendar-60',

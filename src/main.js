@@ -1,18 +1,3 @@
-/*!
-
-  =========================================================
-  * Vue Paper Dashboard 2 PRO - v2.4.1
-  =========================================================
-
-  * Product Page: https://www.creative-tim.com/product/vue-paper-dashboard-2-pro
-  * Available with purchase of license from https://www.creative-tim.com/product/vue-paper-dashboard-2-pro
-  * Copyright 2022 Creative Tim (https://www.creative-tim.com)
-  * License Creative Tim (https://www.creative-tim.com/license)
-
-  =========================================================
-
-*/
-
 import Vue from "vue";
 import "./pollyfills";
 import VueRouter from "vue-router";

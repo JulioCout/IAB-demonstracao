@@ -7,20 +7,20 @@ var d = today.getDate();
 export const INITIAL_EVENTS = [
   {
     id: createEventId(),
-    title: "All Day Event",
+    title: "Sessão",
     start: new Date(y, m, 1),
     className: "event-default",
   },
   {
     id: createEventId(),
-    title: "Meeting",
+    title: "Reunião",
     start: new Date(y, m, d - 1, 10, 30),
     allDay: false,
     className: "event-green",
   },
   {
     id: createEventId(),
-    title: "Lunch",
+    title: "Sessão",
     start: new Date(y, m, d + 7, 12, 0),
     end: new Date(y, m, d + 7, 14, 0),
     allDay: false,
@@ -28,14 +28,14 @@ export const INITIAL_EVENTS = [
   },
   {
     id: createEventId(),
-    title: "Md-pro Launch",
+    title: "Lançamento",
     start: new Date(y, m, d - 2, 12, 0),
     allDay: true,
     className: "event-azure",
   },
   {
     id: createEventId(),
-    title: "Birthday Party",
+    title: "Aniversário",
     start: new Date(y, m, d + 1, 19, 0),
     end: new Date(y, m, d + 1, 22, 30),
     allDay: false,
@@ -43,18 +43,18 @@ export const INITIAL_EVENTS = [
   },
   {
     id: createEventId(),
-    title: "Click for Creative Tim",
+    title: "Evento",
     start: new Date(y, m, 21),
     end: new Date(y, m, 22),
-    url: "http://www.creative-tim.com/",
+    url: "",
     className: "event-orange",
   },
   {
     id: createEventId(),
-    title: "Click for Google",
+    title: "Reunião",
     start: new Date(y, m, 21),
     end: new Date(y, m, 22),
-    url: "http://www.creative-tim.com/",
+    url: "",
     className: "event-orange",
   },
 ];

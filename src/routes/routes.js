@@ -8,6 +8,11 @@ const Widgets = () => import(/* webpackChunkName: "widgets" */ 'src/components/D
 // Pages
 import Login from 'src/components/Dashboard/Views/Pages/Login.vue'
 import Contact from '../components/Dashboard/Views/Pages/Contact.vue'
+import Financeiro from 'src/components/Dashboard/Views/Pages/Financeiro.vue'
+import Membros from 'src/components/Dashboard/Views/Pages/Membros.vue'
+import Indicacoes from 'src/components/Dashboard/Views/Pages/Indicacoes.vue'
+import Processos from 'src/components/Dashboard/Views/Pages/Processos.vue'
+
 
 import User from 'src/components/Dashboard/Views/Pages/UserProfile.vue'
 import TimeLine from 'src/components/Dashboard/Views/Pages/TimeLinePage.vue'
@@ -38,7 +43,6 @@ const FullScreenMap = () => import(/* webpackChunkName: "maps" */ 'src/component
 const VectorMaps = () => import(/* webpackChunkName: "maps" */ 'src/components/Dashboard/Views/Maps/VectorMapsPage.vue');
 
 // Calendar
-import Calendar from 'src/components/Dashboard/Views/Calendar/CalendarRoute.vue'
 // Charts
 const Charts = () => import(/* webpackChunkName: "widgets" */ 'src/components/Dashboard/Views/Charts.vue')
 
@@ -193,19 +197,7 @@ const routes = [
   {
     path: '/',
     component: Login,
-    redirect: '/login',
-    children: [
-      {
-        path: 'calendar',
-        name: 'Calendar',
-        component: Calendar
-      },
-      {
-        path: 'charts',
-        name: 'Charts',
-        component: Charts
-      }
-    ]
+    redirect: '/login'
   },
   loginPage,
   contactPage,
@@ -225,9 +217,24 @@ const routes = [
         component: Overview
       },
       {
-        path: 'widgets',
-        name: 'Widgets',
-        component: Widgets
+        path: 'financeiro',
+        name: 'Financeiro',
+        component: Financeiro
+      },
+      {
+        path: 'membros',
+        name: 'Membros',
+        component: Membros
+      },
+      {
+        path: 'indicacoes',
+        name: 'Indicacoes',
+        component: Indicacoes
+      },
+      {
+        path: 'processos',
+        name: 'Processos',
+        component: Processos
       }
     ]
   },
