@@ -7,16 +7,16 @@
       <div class="author">
         <a href="#">
           <img class="avatar border-gray" src="static/img/mike.jpg" alt="...">
-          <h5 class="title">Chet Faker</h5>
+          <h5 class="title">Mike Exemplo</h5>
         </a>
         <p class="description">
-          @chetfaker
+          @mikeexe
         </p>
       </div>
       <p class="description text-center">
-        "I like the way you work it
-        <br> No diggity
-        <br> I wanna bag it up"
+        Membro Efetivo
+        <br> Comissão de Direito Digital
+        <br> Posse em 01/02/2024
       </p>
     </div>
     <div class="card-footer">
@@ -26,19 +26,19 @@
           <div class="col-lg-3 col-md-6 col-6 ml-auto">
             <h5>12
               <br>
-              <small>Files</small>
+              <small>Arquivos</small>
             </h5>
           </div>
           <div class="col-lg-4 col-md-6 col-6 ml-auto mr-auto">
             <h5>2GB
               <br>
-              <small>Used</small>
+              <small>Usados</small>
             </h5>
           </div>
           <div class="col-lg-3 mr-auto">
-            <h5>24,6$
+            <h5>R$50,00
               <br>
-              <small>Spent</small>
+              <small>Gastos</small>
             </h5>
           </div>
         </div>

@@ -15,10 +15,12 @@
         <collapse-transition>
           <ul class="nav nav-menu" v-show="!isClosed">
             <li>
-              <a href="#">
-                <span class="sidebar-mini-icon">X</span>
-                <span class="sidebar-normal">Sair</span>
-              </a>
+              <RouterLink to="/login">
+                <a href="#">
+                  <span class="sidebar-mini-icon">X</span>
+                  <span class="sidebar-normal">Sair</span>
+                </a>
+            </RouterLink>
             </li>
           </ul>
         </collapse-transition>

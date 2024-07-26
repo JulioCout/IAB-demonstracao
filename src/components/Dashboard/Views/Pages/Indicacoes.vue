@@ -150,6 +150,11 @@
         propsToSearch: ['numero', 'status', 'autor'],
         tableColumns: [
           {
+            prop: 'autor',
+            label: 'Autor',
+            minWidth: 100
+          },
+          {
             prop: 'numero',
             label: 'Número',
             minWidth: 200
@@ -158,11 +163,6 @@
             prop: 'status',
             label: 'Status',
             minWidth: 250
-          },
-          {
-            prop: 'autor',
-            label: 'Autor',
-            minWidth: 100
           },
           {
             prop: 'relator',

@@ -1,6 +1,6 @@
 export default [
   {
-    'numero': 1,
+    'numero': '001',
     'status': 'Arquivada',
     'autor': 'Mr. Enid Von',
     'objeto': 'Exemplo 1',
@@ -8,7 +8,7 @@ export default [
     'relator': 'quaerat'
   },
   {
-    'numero': 2,
+    'numero': '002',
     'status': 'Ativo',
     'autor': 'Colton Koch',
     'objeto': 'Exemplo 2',
@@ -16,7 +16,7 @@ export default [
     'relator': 'assumenda'
   },
   {
-    'numero': 3,
+    'numero': '003',
     'status': 'Rejeitado',
     'autor': 'Gregory Vandervort',
     'objeto': 'Exemplo 3',
@@ -24,7 +24,7 @@ export default [
     'relator': 'alias'
   },
   {
-    'numero': 4,
+    'numero': '004',
     'status': 'Arquivada',
     'autor': 'Ms. Crystel',
     'objeto': 'Exemplo 4',
@@ -32,7 +32,7 @@ export default [
     'relator': 'praesentium'
   },
   {
-    'numero': 5,
+    'numero': '005',
     'status': 'Ativo',
     'autor': 'Nona McDermott',
     'objeto': 'Exemplo 5',
@@ -40,7 +40,7 @@ export default [
     'relator': 'dolorem'
   },
   {
-    'numero': 6,
+    'numero': '006',
     'status': 'Rejeitado',
     'autor': 'Beulah Huels',
     'objeto': 'Exemplo 6',

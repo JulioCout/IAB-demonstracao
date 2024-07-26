@@ -39,7 +39,7 @@
     },
     data () {
       return {
-        title: 'Team members',
+        title: 'Membros do Time',
         members: [
           {
             image: 'static/img/faces/face-0.jpg',

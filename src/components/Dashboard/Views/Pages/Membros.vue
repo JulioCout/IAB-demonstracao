@@ -226,8 +226,8 @@
       }
     },
     methods: {
-      handleLike (index, row) {
-        alert(`Abrirá a ficha do ${row.nome}`)
+      handleLike () {
+        this.$router.push({ name: 'User Page'})
       },
       handleEdit () {
         alert(`Abrirá para edição`)

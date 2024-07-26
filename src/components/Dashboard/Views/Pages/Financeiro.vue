@@ -229,7 +229,7 @@
         },
         activeCountriesChart: {
           data: {
-            labels: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October"],
+            labels: ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out"],
             series: [80, 78, 86, 96, 83, 85, 76, 75, 88, 90]
           }
         },

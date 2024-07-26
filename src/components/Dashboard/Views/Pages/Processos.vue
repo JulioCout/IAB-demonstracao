@@ -147,17 +147,17 @@
           total: 0
         },
         searchQuery: '',
-        propsToSearch: ['processo', 'nome', 'numero na justica'],
+        propsToSearch: ['nome', 'processo',  'numero na justica'],
         tableColumns: [
-          {
-            prop: 'processo',
-            label: 'Processo',
-            minWidth: 200
-          },
           {
             prop: 'nome',
             label: 'Nome',
             minWidth: 250
+          },
+          {
+            prop: 'processo',
+            label: 'Processo',
+            minWidth: 200
           },
           {
             prop: 'numero na justica',
