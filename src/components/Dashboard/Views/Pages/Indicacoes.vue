@@ -60,9 +60,6 @@
                 <p-button type="success" size="sm" icon @click="handleEdit(props.$index, props.row)">
                   <i class="fa fa-edit"></i>
                 </p-button>
-                <p-button type="danger" size="sm" icon @click="handleDelete(props.$index, props.row)">
-                  <i class="fa fa-times"></i>
-                </p-button>
               </template>
             </el-table-column>
           </el-table>
@@ -175,10 +172,10 @@
     },
     methods: {
       handleLike (index, row) {
-        alert(`Your want to like ${row.name}`)
+        alert(`Abrir Indicação ${row.name}`)
       },
       handleEdit (index, row) {
-        alert(`Your want to edit ${row.name}`)
+        alert(`Editar Indicação ${row.name}`)
       },
       handleDelete (index, row) {
         let indexToDelete = this.tableData.findIndex((tableRow) => tableRow.id === row.id)
