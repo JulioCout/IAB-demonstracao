@@ -35,6 +35,8 @@
       </stats-card>
     </div>
 
+    <p>OBS.: Clique no botão azul da tabela para ver exemplo de ficha de membro.</p>
+
     <div class="col-md-12 card">
       <!-- <div class="card-header">
         <div class="category">Extended tables</div>

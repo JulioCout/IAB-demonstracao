@@ -36,7 +36,7 @@
             </h5>
           </div>
           <div class="col-lg-3 mr-auto">
-            <h5>R$50,00
+            <h5>R$50
               <br>
               <small>Gastos</small>
             </h5>
