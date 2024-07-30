@@ -1,82 +1,97 @@
 <template>
-  <div class="row">
-    <div class="col-md-12">
-      <h3 class="title">Processos</h3>
-      <!-- <p class="category">
-        We combine <a href="http://element.eleme.io/#/en-US/component/quickstart" target="_blank" rel="noopener">Element-UI</a>
-        table functionalities together with a custom pagination component
-        which should provide a very good starting point to integrate tables in your application.
-        Check out more functionalities at <a href="http://element.eleme.io/#/en-US/component/table" target="_blank" rel="noopener">Element-UI table documentation</a>.
-       </p> -->
+  <div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="title">Processos</h3>
+        <!-- <p class="category">
+          We combine <a href="http://element.eleme.io/#/en-US/component/quickstart" target="_blank" rel="noopener">Element-UI</a>
+          table functionalities together with a custom pagination component
+          which should provide a very good starting point to integrate tables in your application.
+          Check out more functionalities at <a href="http://element.eleme.io/#/en-US/component/table" target="_blank" rel="noopener">Element-UI table documentation</a>.
+        </p> -->
+      </div>
     </div>
-    <div class="col-md-12 card">
-      <!-- <div class="card-header">
-        <div class="category">Extended tables</div>
-      </div> -->
-      <div class="card-body row">
-        <div class="col-sm-3">
-            <fg-input class="input-sm"
-                      placeholder="Pesquisa"
-                      v-model="searchQuery"
-                      addon-right-icon="nc-icon nc-zoom-split">
-            </fg-input>
-        </div>
-        <div class="col-sm-9">
-          <div class="pull-right">
-            <el-select
-              class="select-default"
-              v-model="pagination.perPage"
-              placeholder="Per page">
-              <el-option
-                class="select-default"
-                v-for="item in pagination.perPageOptions"
-                :key="item"
-                :label="item"
-                :value="item">
-              </el-option>
-            </el-select>
+
+    <div class="row">
+      <div class="col-sm-6 col-lg-3 mb-4">
+        <p-button type="info" >
+          <i slot="label" class="nc-icon nc-simple-add"></i>
+          Cadastrar Novo Processo
+        </p-button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 card">
+        <!-- <div class="card-header">
+          <div class="category">Extended tables</div>
+        </div> -->
+        <div class="card-body row">
+          <div class="col-sm-3">
+              <fg-input class="input-sm"
+                        placeholder="Pesquisa"
+                        v-model="searchQuery"
+                        addon-right-icon="nc-icon nc-zoom-split">
+              </fg-input>
           </div>
-        </div>
-        <div class="col-sm-12 mt-2">
-          <el-table class="table-striped"
-                    :data="queriedData"
-                    border
-                    style="width: 100%">
-            <el-table-column v-for="column in tableColumns"
-                             :key="column.label"
-                             :min-width="column.minWidth"
-                             :prop="column.prop"
-                             :label="column.label">
-            </el-table-column>
-            <el-table-column
-              :min-width="120"
-              fixed="right"
-              class-name="td-actions"
-              label="Actions">
-              <template slot-scope="props">
-                <p-button type="info" size="sm" icon @click="handleLike(props.$index, props.row)">
-                  <i class="fa fa-user"></i>
-                </p-button>
-                <p-button type="success" size="sm" icon @click="handleEdit(props.$index, props.row)">
-                  <i class="fa fa-edit"></i>
-                </p-button>
-              </template>
-            </el-table-column>
-          </el-table>
-        </div>
-        <div class="col-sm-6 pagination-info">
-          <p class="category">Mostrando {{from + 1}} a {{to}} de {{total}} itens</p>
-        </div>
-        <div class="col-sm-6">
-          <p-pagination class="pull-right"
-                        v-model="pagination.currentPage"
-                        :per-page="pagination.perPage"
-                        :total="pagination.total">
-          </p-pagination>
+          <div class="col-sm-9">
+            <div class="pull-right">
+              <el-select
+                class="select-default"
+                v-model="pagination.perPage"
+                placeholder="Per page">
+                <el-option
+                  class="select-default"
+                  v-for="item in pagination.perPageOptions"
+                  :key="item"
+                  :label="item"
+                  :value="item">
+                </el-option>
+              </el-select>
+            </div>
+          </div>
+          <div class="col-sm-12 mt-2">
+            <el-table class="table-striped"
+                      :data="queriedData"
+                      border
+                      style="width: 100%">
+              <el-table-column v-for="column in tableColumns"
+                              :key="column.label"
+                              :min-width="column.minWidth"
+                              :prop="column.prop"
+                              :label="column.label">
+              </el-table-column>
+              <el-table-column
+                :min-width="120"
+                fixed="right"
+                class-name="td-actions"
+                label="Actions">
+                <template slot-scope="props">
+                  <p-button type="info" size="sm" icon @click="handleLike(props.$index, props.row)">
+                    <i class="fa fa-user"></i>
+                  </p-button>
+                  <p-button type="success" size="sm" icon @click="handleEdit(props.$index, props.row)">
+                    <i class="fa fa-edit"></i>
+                  </p-button>
+                </template>
+              </el-table-column>
+            </el-table>
+          </div>
+          <div class="col-sm-6 pagination-info">
+            <p class="category">Mostrando {{from + 1}} a {{to}} de {{total}} itens</p>
+          </div>
+          <div class="col-sm-6">
+            <p-pagination class="pull-right"
+                          v-model="pagination.currentPage"
+                          :per-page="pagination.perPage"
+                          :total="pagination.total">
+            </p-pagination>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 </template>
 <script>
   import Vue from 'vue'
