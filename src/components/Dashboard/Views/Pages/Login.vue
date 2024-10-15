@@ -10,6 +10,7 @@
               <form @submit.prevent="login" ref="loginForm">
                 <card type="login">
                   <h3 slot="header" class="header text-center">Login</h3>
+                  <p>Acesse a demonstração com: <br> Login e Senha: "bernardo" </p>
                   <p v-if="senhaIncorreta" class="wrongPassAlert">Usuário ou Senha incorreto</p>
 
                   <fg-input v-model="form.username" addon-left-icon="nc-icon nc-single-02"
@@ -65,7 +66,7 @@
         document.body.classList.remove('off-canvas-sidebar')
       },
       login() {
-        if(this.form.username == "bernardo" && this.form.password == "bernardoiab") {
+        if(this.form.username == "bernardo" && this.form.password == "bernardo") {
           this.$router.push({ name: 'Overview'})
         }
         else {
