@@ -8,7 +8,7 @@
     </div>
     
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-md-10">
         <task-list></task-list>
       </div>
     </div>
